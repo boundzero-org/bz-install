@@ -42,4 +42,5 @@ copy_files_preserve_dirs "$BZ_TOOLSET_INSTALL_DIR/bz-install/$OS_RELEASE/os" /
 
 sudo ln -s "$BZ_TOOLSET_INSTALL_DIR/bz-install/$OS_RELEASE/os-post-install.sh" "/etc/skel/Documents/"
 
-sed "s/\[OS_NAME\]/$OS_NAME/g" /etc/skel/Documents
+sed "s/\[OS_NAME\]/$OS_NAME/g" /etc/skel/Documents/README.txt > tmpfile.txt
+mv tmpfile.txt /etc/skel/Documents/README.txt
